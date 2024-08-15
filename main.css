@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.black {
+    background: black;
+}
+
+img {
+    width: 30%;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: orange;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.open-slide {
+    display: none; /* Hide slide menu trigger on larger screens */
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.5s;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+}
+.trade-btn{
+  text-decoration:none;
+  background:orange;
+  font-size:1.2rem;
+  color: white;
+  padding:15px;
+  margin-top:4px;
+  border-radius:6px;
+}
+.about, .services, .hero, .main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.contact{
+    padding: 12px;
+    background: black;
+    color: #fff;
+}
+
+
+.contact a{
+  text-decoration:none;
+}
+
+footer{
+  text-align: center;
+  background: grey;
+ width: 100%;
+ left:0;
+ bottom:0;
+ padding: 10px 0;
+ color: white;
+}
+
+h1{
+  color:white;
+}
+
+.border{
+  border:1px solid white;
+  border-radius:8px;
+  padding: 10px;
+}
+
+.border img{
+  width:7%;
+  border-radius:10px;
+ 
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide the navbar links on smaller screens */
+    }
+
+    .open-slide {
+        display: block; /* Show slide menu trigger on smaller screens */
+    }
+}
+
+@media (max-width: 431px) {
+    .nav-bar-nav {
+        display: none;
+    }
+}
+
+
